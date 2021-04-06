@@ -17,20 +17,20 @@ TEST(Test, test2) {
 TEST(Test, test3) {
   Train train3(0);
   train3.addCage(1);
-  EXPECT_EQ(l, train3.print());
+  EXPECT_EQ("l", train3.print());
 }
 
 TEST(Test, test4) {
   Train train4(0);
   train4.addCage(0);
-  EXPECT_EQ(d, train4.print());
+  EXPECT_EQ("d", train4.print());
 }
 
 TEST(Test, test5) {
   Train train5(0);
   train5.addCage(1);
   train5.sizeOfTrain();
-  EXPECT_EQ(d, train5.print());
+  EXPECT_EQ("d", train5.print());
 }
 
 TEST(Test, test6) {
