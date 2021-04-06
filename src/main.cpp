@@ -4,7 +4,7 @@
 
 int main() {
   srand(std::time(NULL));
-  //Train train(rand() % 100);
+  //    Train train(rand() % 100);
   Train train(5);
   train.addCage(1);
   train.print();
