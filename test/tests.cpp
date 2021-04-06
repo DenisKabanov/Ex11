@@ -15,16 +15,16 @@ TEST(Testtwo, test2) {
 }
 
 TEST(Testthree, test3) {
-  Train train3(10);
-  train3.addCage(1);
-  EXPECT_EQ(11, train3.sizeOfTrain());
+  Train* train3 = new Train(10);
+  train3->addCage(0);
+  EXPECT_EQ(11, train3->sizeOfTrain());
 }
 
 TEST(Testfour, test4) {
-  Train train4(5);
+  Train* train4 = new Train(5);
   for (int i = 0; i < 5; i++) {
-    train4.addCage(1);
+    train4->addCage(1);
   }
-  EXPECT_EQ(10, train4.sizeOfTrain());
+  EXPECT_EQ(10, train4->sizeOfTrain());
 }
 
