@@ -15,15 +15,15 @@ TEST(Test2, test2) {
 }
 
 TEST(Test3, test3) {
-  Train train3(0);
-  train3.addCage(0);
-  EXPECT_EQ(1, train3.sizeOfTrain());
+  Train train3(10);
+  train3.addCage(1);
+  EXPECT_EQ(11, train3.sizeOfTrain());
 }
 
 TEST(Test4, test4) {
   Train train4(5);
   for (int i = 0; i < 5; i++) {
-    train4.addCage(0);
+    train4.addCage(1);
   }
   EXPECT_EQ(10, train4.sizeOfTrain());
 }
