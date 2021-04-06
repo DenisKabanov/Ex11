@@ -4,14 +4,14 @@
 #include "train.h"
 
 TEST(Testone, test1) {
-  Train train1(5);
-  EXPECT_EQ(5, train1.sizeOfTrain());
+  Train* train1 = new Train(5);
+  EXPECT_EQ(5, train1->sizeOfTrain());
 }
 
 TEST(Testtwo, test2) {
-  Train train2(5);
-  train2.addCage(1);
-  EXPECT_EQ(6, train2.sizeOfTrain());
+  Train* train2 = new Train(5);
+  train2->addCage(1);
+  EXPECT_EQ(6, train2->sizeOfTrain());
 }
 
 TEST(Testthree, test3) {
