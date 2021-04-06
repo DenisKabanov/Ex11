@@ -1,12 +1,13 @@
 // Copyright 06.04.21 DenisKabanov
 
 #include "train.h"
+#include <random>
 
 Train::Train(int size) {
   srand(std::time(NULL));
   bool light;
   for (int i = 0; i < size; i++) {
-    light = rand() % 2;
+    light = std::rand() % 2;
     addCage(light);
   }
 }
