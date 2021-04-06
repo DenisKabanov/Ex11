@@ -3,7 +3,7 @@
 #include "train.h"
 
 int main() {
-  srand(std::time(NULL)); 
+  srand(std::time(NULL));
   //Train train(rand() % 100);
   Train train(5);
   train.addCage(1);

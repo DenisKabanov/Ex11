@@ -40,7 +40,7 @@ void Train::print() {
   }
   std::cout << output << std::endl;
   printCage = printCage->next;
-  while (printCage != this->first ) {
+  while ( printCage != this->first ) {
     if (printCage->get() == 1) {
       output = 'l';
     } else {
@@ -52,7 +52,7 @@ void Train::print() {
 }
 
 int Train::sizeOfTrain() {
-    bool firstCageLight = this->first->get(); 
+    bool firstCageLight = this->first->get();
     int size = 1;
     Cage* currentCage = this->first;
     if (currentCage == nullptr) {
